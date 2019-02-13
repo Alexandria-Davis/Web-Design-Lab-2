@@ -29,7 +29,7 @@
           <p id="guesses"></p>
           <p id="lastResult"></p>
           <p id="lowOrHigh"></p>
-          <button class="reset">Reset</button>
+          <button id="reset">Reset</button>
         </div>
 
         <script>
@@ -40,10 +40,10 @@
         //HTML Shortcuts
         var guessField = document.querySelector("#guessField");
         var guessSubmit = document.getElementById(".guessSubmit");
-        var reset = document.querySelector(".reset") //if guessSubmit is a class, reset will be one too.
+        var reset = document.querySelector("#reset") //if guessSubmit is a class, reset will be one too.
         reset.style.display="none";
 
-        var guesses = document.querySelector(#guesses);
+        var guesses = document.querySelector("#guesses");
         var lastResult = document.querySelector("#lastResult")
         var LowOrHigh = document.querySelector("#lowOrHigh")
 
