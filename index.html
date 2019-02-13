@@ -16,18 +16,37 @@
 
         <div class="jumbotron">
             <h1>Guess a Number</h1>
-
-            <p> Number to guess: <span id="Numb_To_Guess"></span> </p>
         </div>
 
         <div id="directions">
             Guess a number between 1 and 99 in seven attempts!
+            <p> Number to guess: <span id="Numb_To_Guess"></span> </p>
+
+          <label for="guessField">Guess a number</label>
+          <input type="text" id="guessField" class="guessField">
+          <input type="submit" class="guessSubmit">
+          </br></br>
+          <p id="guesses"></p>
+          <p id="lastResult"></p>
+          <p id="lowOrHigh"></p>
+          <button class="reset">Reset</button>
         </div>
 
-
         <script>
-        var RandNumber = 11;
-        RandNumber = Math.floor(Math.random()*99)+1;
+        var RandNumber = RandNumber = Math.floor(Math.random()*99)+1;
+        var guesscount = 1;
+        var maxguesses=7;
+
+        //HTML Shortcuts
+        var guessField = document.querySelector("#guessField");
+        var guessSubmit = document.getElementById(".guessSubmit");
+        var reset = document.querySelector(".reset") //if guessSubmit is a class, reset will be one too.
+        reset.style.display="none";
+
+        var guesses = document.querySelector(#guesses);
+        var lastResult = document.querySelector("#lastResult")
+        var LowOrHigh = document.querySelector("#lowOrHigh")
+
         document.getElementById("Numb_To_Guess").innerHTML = RandNumber;
         console.log(RandNumber);
         </script>
