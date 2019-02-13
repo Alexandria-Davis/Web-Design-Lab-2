@@ -30,7 +30,7 @@ function checkGuess() {
     lastResult.style.backgroundColor = "yellow";
     guessCount--;
   }
-  else if (guess = RandNumber) {
+  else if (guess === RandNumber) {
     lastResult.innerHTML = "Congradulations! You got it right!"
     lastResult.style.backgroundColor = "green";
     lowOrHigh.innerHTML = " -- "
