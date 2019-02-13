@@ -88,13 +88,13 @@
           guessField.value = "";
           guessField.focus();
         }
-        setGameOver() {
+        function setGameOver() {
           guessField.disabled = true;
           guessSubmit.disabled = true;
           reset.style.display = "inline";
           reset.addEventListener("click",resetGame);
         }
-        resetGame() {
+        function resetGame() {
           var RandNumber = RandNumber = Math.floor(Math.random()*99)+1;
           var guesscount = 1;
           reset.style.display="none";
