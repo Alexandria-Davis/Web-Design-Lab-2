@@ -26,11 +26,11 @@ function checkGuess() {
   guesses.innerHTML += guess + " "
   if (!(guess && guess > 0 && guess < 100))
   {
-    lastResult = "Error: not a valid guess";
+    lastResult.innerHTML = "Error: not a valid guess";
     lastResult.style.backgroundColor = "yellow";
     guessCount--;
   }
-  else if (guess === RandNumber) {
+  else if (guess == RandNumber) {
     lastResult.innerHTML = "Congradulations! You got it right!"
     lastResult.style.backgroundColor = "green";
     lowOrHigh.innerHTML = " -- "
