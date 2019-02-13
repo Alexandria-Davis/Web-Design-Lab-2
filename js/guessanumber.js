@@ -1,6 +1,6 @@
 
 var RandNumber = RandNumber = Math.floor(Math.random()*99)+1;
-var guesscount = 1;
+var guessCount = 1;
 var maxguesses=7;
 
 //HTML Shortcuts
@@ -62,7 +62,7 @@ function setGameOver() {
 }
 function resetGame() {
   var RandNumber = RandNumber = Math.floor(Math.random()*99)+1;
-  var guesscount = 1;
+  var guessCount = 1;
   reset.style.display="none";
   lowOrHigh.innerHTML='';
   lastResult.style.backgroundColor="white";
