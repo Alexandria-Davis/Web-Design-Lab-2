@@ -58,7 +58,7 @@
             guesses.innerHTML = "Previous Guesses: "
           }
           guesses.innerHTML += guess + " "
-          if !(guess && guess > 0 && guess < 100)
+          if (!(guess && guess > 0 && guess < 100))
           {
             lastResult = "Error: not a valid guess";
             lastResult.style.backgroundColor = "yellow";
